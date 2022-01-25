@@ -5,6 +5,7 @@ Example of integration WebAssembly (WASM) in Angular 13
 1. Create new Angular project - `ng new angular-rust-wasm`
 2. Create Rust files `Cargo.toml` and `wasm-src/lib.rs` based on https://rustwasm.github.io/docs/wasm-bindgen/examples/hello-world.html#cargotoml
 3. Install and configure custom-webpack `npm install -D @angular-builders/custom-webpack`...
+4. Build wasm package: Add wasm-pack-plugin `npm install -D @wasm-tool/wasm-pack-plugin`...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 

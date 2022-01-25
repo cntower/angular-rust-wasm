@@ -5,6 +5,8 @@
 /tmp
 /out-tsc
 /bazel-out
+/wasm-pkg
+/target
 
 # Node
 /node_modules
