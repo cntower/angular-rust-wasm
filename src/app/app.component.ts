@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {greet} from 'wasm/hello/hello-pkg';
+import {Component} from '@angular/core';
 import pkg from 'package.json';
 
 @Component({
@@ -7,10 +6,6 @@ import pkg from 'package.json';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    greet('World');
-  }
-
+export class AppComponent {
   title = 'angular-rust-wasm' + '@' + JSON.stringify(pkg.version);
 }
