@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {greet} from 'wasm-pkg';
-
-declare const APP_VERSION: string;
+import {greet} from 'wasm/wasm-pkg';
+import pkg from 'package.json';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +12,5 @@ export class AppComponent implements OnInit {
     greet('World');
   }
 
-  title = 'angular-rust-wasm' + '@' + APP_VERSION;
+  title = 'angular-rust-wasm' + '@' + JSON.stringify(pkg.version);
 }

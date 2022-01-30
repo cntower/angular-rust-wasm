@@ -11,6 +11,6 @@
   ],
   "include": [
     "src/**/*.d.ts",
-    "wasm-pkg/**/*.d.ts"
+    "wasm/**/*.d.ts"
   ]
 }
