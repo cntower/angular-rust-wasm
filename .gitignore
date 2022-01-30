@@ -5,9 +5,9 @@
 /tmp
 /out-tsc
 /bazel-out
-/wasm-pkg
-/wasm/wasm-pkg
-/wasm/target
+/*-pkg
+/wasm/**/*-pkg
+/wasm/**/target
 
 # Node
 /node_modules

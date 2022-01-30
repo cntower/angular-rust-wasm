@@ -10,8 +10,8 @@ export default (
 ) => {
   config.plugins!.push(
     new WasmPackPlugin({
-      crateDirectory: path.resolve(__dirname, './wasm'),
-      outDir: 'wasm-pkg',
+      crateDirectory: path.resolve(__dirname, './wasm/hello'),
+      outDir: 'hello-pkg',
       forceMode: 'development'
     }),
     // Have this example work in Edge which doesn't ship `TextEncoder` or

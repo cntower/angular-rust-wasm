@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {greet} from 'wasm/wasm-pkg';
+import {greet} from 'wasm/hello/hello-pkg';
 import pkg from 'package.json';
 
 @Component({
