@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {greet} from 'wasm/hello/hello-pkg';
 
 @Component({
@@ -6,14 +6,8 @@ import {greet} from 'wasm/hello/hello-pkg';
   templateUrl: './hello.component.html',
   styleUrls: ['./hello.component.css']
 })
-export class HelloComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
+export class HelloComponent {
+  onGreetClick() {
     greet('World');
   }
-
-
 }
