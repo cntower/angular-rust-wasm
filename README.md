@@ -1,5 +1,5 @@
-# AngularRustWasm ( Angular, Rust, WebAssembly )
-Example of integration WebAssembly (WASM) in Angular 13
+# Angular Wasm Rust ( Angular, WebAssembly, Rust )
+Example of integration WebAssembly (WASM) in Angular v13
 
 ## Prerequisites
 - [Angular CLI](https://github.com/angular/angular-cli)
@@ -14,4 +14,4 @@ Example of integration WebAssembly (WASM) in Angular 13
 3. Install custom-webpack `npm install -D @angular-builders/custom-webpack` and configure
 4. Build wasm package: Add wasm-pack-plugin `npm install -D @wasm-tool/wasm-pack-plugin` and plug it in webpack
 5. Call WebAssembly from Angular 🙂
-6. Lazy loading for wasm packages
+6. Lazy loading for wasm modules
