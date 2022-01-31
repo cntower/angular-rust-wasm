@@ -1,0 +1,18 @@
+<h2>Julia Set</h2>
+<a href="https://rustwasm.github.io/docs/wasm-bindgen/examples/julia.html#julia-set">Original example</a>
+<p>Julia set in  <a href="https://en.wikipedia.org/wiki/Julia_set">wikipedia</a></p>
+<main>
+  <form class="controls" (ngSubmit)="onRenderClick()">
+    C =
+    <div>
+      <label for="real">real</label>
+      <input type="number" [(ngModel)]="real" [ngModelOptions]="{standalone: true}" id="real" step="0.001">
+    </div>
+    <div>
+      <label for="imaginary">imaginary</label>
+      <input type="number" [(ngModel)]="imaginary" [ngModelOptions]="{standalone: true}" id="imaginary" step="0.001">
+    </div>
+    <button (click)="onRenderClick()">render</button>
+  </form>
+  <canvas #canvas id="drawing" width="600" height="600"></canvas>
+</main>

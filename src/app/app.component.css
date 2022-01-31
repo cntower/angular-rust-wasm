@@ -1,0 +1,5 @@
+:host {
+    display: grid;
+    grid-template-columns: 100px 30px auto;
+    grid-auto-flow: column;
+}
