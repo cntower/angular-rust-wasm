@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-rust-wasm": {
+    "angular-wasm-rust": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -23,7 +23,7 @@
                 "externals": "replace"
               }
             },
-            "outputPath": "dist/angular-rust-wasm",
+            "outputPath": "dist/angular-wasm-rust",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -39,6 +39,12 @@
           },
           "configurations": {
             "production": {
+              "customWebpackConfig": {
+                "path": "./extra-webpack.config.prod.ts",
+                "mergeRules": {
+                  "externals": "replace"
+                }
+              },
               "budgets": [
                 {
                   "type": "initial",
@@ -74,10 +80,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-rust-wasm:build:production"
+              "browserTarget": "angular-wasm-rust:build:production"
             },
             "development": {
-              "browserTarget": "angular-rust-wasm:build:development"
+              "browserTarget": "angular-wasm-rust:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +91,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-rust-wasm:build"
+            "browserTarget": "angular-wasm-rust:build"
           }
         },
         "test": {
@@ -108,5 +114,5 @@
       }
     }
   },
-  "defaultProject": "angular-rust-wasm"
+  "defaultProject": "angular-wasm-rust"
 }

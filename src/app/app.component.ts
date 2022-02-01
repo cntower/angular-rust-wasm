@@ -7,5 +7,5 @@ import pkg from 'package.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-rust-wasm' + '@' + JSON.stringify(pkg.version);
+  title = 'angular-wasm-rust' + '@' + JSON.stringify(pkg.version);
 }

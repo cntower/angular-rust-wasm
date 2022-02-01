@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-rust-wasm'`, () => {
+  it(`should have as title 'angular-wasm-rust'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-rust-wasm');
+    expect(app.title).toEqual('angular-wasm-rust');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-rust-wasm app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-wasm-rust app is running!');
   });
 });
