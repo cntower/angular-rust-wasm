@@ -1,0 +1,44 @@
+.hero-logo__row {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hero-logo {
+    height: 150px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-logo__angular {
+    background-image: url(/assets/shield-large.svg);
+}
+
+.hero-logo__wasm {
+    background-image: url(/assets/WebAssembly_Logo.svg);
+}
+
+.hero-logo__rust {
+    background-image: url(/assets/Rust_programming_language_black_logo.svg.png);
+}
+
+.cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.header {
+    text-align: center;
+}
+
+.card {
+    background: #654ff014;
+    border-radius: 1rem;
+    padding: 1rem;
+}

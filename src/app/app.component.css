@@ -1,10 +1,4 @@
 :host {
-    display: grid;
-    grid-template-columns: 100px 30px auto;
-    grid-auto-flow: column;
-}
-iframe {
-    border: none;
-    height: 30px;
-    width: 170px;
+    display: flex;
+    flex-direction: column;
 }

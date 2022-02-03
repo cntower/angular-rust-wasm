@@ -1,0 +1,27 @@
+<section id="intro" class="wrapper background-sky">
+  <div class="hero-logo__row">
+    <div class="hero-logo hero-logo__angular"></div>
+    <div class="hero-logo hero-logo__wasm"></div>
+    <div class="hero-logo hero-logo__rust"></div>
+  </div>
+  <h1 class="header">
+    Angular, WebAssembly and Rust.
+  </h1>
+  <p class="description">
+    An enterprise-grade front-end framework enhanced with super-performing Rast-based
+    binaries, let's see how they work together with a few examples.
+  </p>
+</section>
+<section id="examples" class="wrapper">
+  <div class="cards">
+    <div class="card">
+      <a [routerLink]="['hello']">Hello</a>
+      <p>This is the "Hello, world!" example of #[wasm_bindgen] showing how to set up a project, export a function to JS,
+        call it from JS, and then call the alert function in Rust.</p>
+    </div>
+    <div class="card">
+      <a [routerLink]="['julia']">Julia</a>
+      <p>Julia set in <a href="https://en.wikipedia.org/wiki/Julia_set">wikipedia</a></p>
+    </div>
+  </div>
+</section>

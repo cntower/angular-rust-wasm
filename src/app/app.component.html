@@ -1,12 +1,13 @@
-<nav>
-  <ul>
-    <li>
-      <a [routerLink]="['hello']">Hello</a>
-    </li>
-    <li>
-      <a [routerLink]="['julia']">Julia</a>
-    </li>
-  </ul>
-  <p>View on <a href="https://github.com/cntower/angular-wasm-rust">GitHub</a></p>
-</nav>
+<div class="wrapper">
+  <nav>
+    <ul>
+      <li>
+        <a [routerLink]="['home']">Home</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 <router-outlet></router-outlet>
+<div class="wrapper">
+  <p>View on <a href="https://github.com/cntower/angular-wasm-rust">GitHub</a></p>
+</div>
