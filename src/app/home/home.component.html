@@ -15,13 +15,19 @@
 <section id="examples" class="wrapper">
   <div class="cards">
     <div class="card">
-      <a [routerLink]="['hello']">Hello</a>
-      <p>This is the "Hello, world!" example of #[wasm_bindgen] showing how to set up a project, export a function to JS,
-        call it from JS, and then call the alert function in Rust.</p>
+      <div class="card__description">
+        <a [routerLink]="['hello']">Hello</a>
+        <p>This is the "Hello, world!" example of #[wasm_bindgen] showing how to set up a project, export a function to
+          JS,
+          call it from JS, and then call the alert function in Rust.</p>
+      </div>
     </div>
     <div class="card">
-      <a [routerLink]="['julia']">Julia</a>
-      <p>Julia set in <a href="https://en.wikipedia.org/wiki/Julia_set">wikipedia</a></p>
+      <div class="card__description">
+        <a [routerLink]="['julia']">Julia</a>
+        <p>Julia set in <a href="https://en.wikipedia.org/wiki/Julia_set">wikipedia</a></p>
+      </div>
+      <figure class="card__image card__image--julia"></figure>
     </div>
   </div>
 </section>
