@@ -27,6 +27,10 @@
     background-image: url(/assets/Rust_programming_language_black_logo.svg.png);
 }
 
+.description {
+    text-align: center;
+}
+
 .cards {
     display: grid;
     grid-gap: 1rem;
@@ -35,6 +39,11 @@
 
 .header {
     text-align: center;
+}
+
+.what-to-do {
+    text-align: center;
+    font-size: 1.17em;;
 }
 
 .card__description {

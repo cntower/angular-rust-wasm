@@ -4,9 +4,21 @@
     color-scheme: light dark;
 }
 
+button, select, html, textarea, input {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--font-color);
+}
+
+h1, h3 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 .wrapper {
