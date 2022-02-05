@@ -1,0 +1,10 @@
+:root {
+    --background-color: #111;
+    --card-background-color: #222;
+    --font-color: #c4c4c4;
+    --card-border-color: #000;
+}
+
+.hero-logo__row {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}

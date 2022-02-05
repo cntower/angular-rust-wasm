@@ -7,27 +7,32 @@
   <h1 class="header">
     Angular, WebAssembly and Rust.
   </h1>
-  <p class="description">
-    An enterprise-grade front-end framework enhanced with super-performing Rast-based
-    binaries, let's see how they work together with a few examples.
-  </p>
 </section>
 <section id="examples" class="wrapper">
+  <h2 class="description">
+    An enterprise-grade front-end framework enhanced with super-performing Rast-based
+    binaries, let's see how they work together with a few examples.
+  </h2>
   <div class="cards">
-    <div class="card">
-      <div class="card__description">
-        <a [routerLink]="['hello']">Hello</a>
-        <p>This is the "Hello, world!" example of #[wasm_bindgen] showing how to set up a project, export a function to
-          JS,
-          call it from JS, and then call the alert function in Rust.</p>
+    <a class="card" [routerLink]="['hello']">
+      <div class="card__inner">
+        <div class="card__description">
+          <h3>Hello</h3>
+          <p>This is the "Hello, world!" example of #[wasm_bindgen] showing how to set up a project, export a function
+            to
+            JS,
+            call it from JS, and then call the alert function in Rust.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card__description">
-        <a [routerLink]="['julia']">Julia</a>
-        <p>Julia set in <a href="https://en.wikipedia.org/wiki/Julia_set">wikipedia</a></p>
+    </a>
+    <a class="card" [routerLink]="['julia']">
+      <div class="card__inner">
+        <div class="card__description">
+          <h3>Julia</h3>
+          <p>Julia set in <a href="https://en.wikipedia.org/wiki/Julia_set">wikipedia</a></p>
+        </div>
+        <figure class="card__image card__image--julia"></figure>
       </div>
-      <figure class="card__image card__image--julia"></figure>
-    </div>
+    </a>
   </div>
 </section>

@@ -40,6 +40,14 @@
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "scripts": true,
+                "fonts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
               "customWebpackConfig": {
                 "path": "./extra-webpack.config.prod.ts",
                 "mergeRules": {
