@@ -19,6 +19,11 @@ export default (
       outDir: 'julia-pkg',
       forceMode: 'development'
     }),
+    new WasmPackPlugin({
+      crateDirectory: path.resolve(__dirname, './wasm/console_log'),
+      outDir: 'console_log-pkg',
+      forceMode: 'development'
+    }),
     // Have this example work in Edge which doesn't ship `TextEncoder` or
     // `TextDecoder` at this time.
     new webpack.ProvidePlugin({
