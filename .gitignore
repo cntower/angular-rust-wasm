@@ -8,6 +8,8 @@
 /*-pkg
 /wasm/**/*-pkg
 /wasm/**/target
+/pkg
+/src/pkg
 
 # Node
 /node_modules

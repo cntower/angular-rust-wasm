@@ -31,7 +31,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/robots.txt"
+              "src/robots.txt",
+              "src/pkg/worker/console_log.js",
+              "src/pkg/worker/console_log_bg.wasm"
             ],
             "styles": [
               "src/styles.css"

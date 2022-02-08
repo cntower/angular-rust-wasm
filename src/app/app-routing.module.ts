@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: 'hello', loadChildren: () => import('./hello/hello.module').then(m => m.HelloModule)},
   {path: 'julia', loadChildren: () => import('./julia/julia.module').then(m => m.JuliaModule)},
   { path: 'console_log', loadChildren: () => import('./console_log/console_log.module').then(m => m.Console_logModule) },
+  { path: 'worker', loadChildren: () => import('./worker/worker.module').then(m => m.WorkerModule) },
   {path: '**', redirectTo: ''}
 ]
 
