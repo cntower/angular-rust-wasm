@@ -13,7 +13,9 @@
         <label for="imaginary">imaginary</label>
         <input type="number" [(ngModel)]="imaginary" [ngModelOptions]="{standalone: true}" id="imaginary" step="0.001">
       </div>
-      <button (click)="onRenderClick()">render</button>
+      <div>
+        <button (click)="onRenderClick()">render</button>
+      </div>
     </form>
     <canvas #canvas id="drawing" width="600" height="600"></canvas>
   </main>
