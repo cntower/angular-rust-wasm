@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {run, wasm_log} from 'wasm/console_log/console_log-pkg';
+import {run, wasm_log} from 'src/pkg/console_log';
 @Component({
   selector: 'app-console_log',
   templateUrl: './console_log.component.html',

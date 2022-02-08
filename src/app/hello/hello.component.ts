@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {greet} from 'wasm/hello/hello-pkg';
+import {greet} from 'src/pkg/hello';
 
 @Component({
   selector: 'app-hello',

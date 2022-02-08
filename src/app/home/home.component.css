@@ -31,12 +31,6 @@
     text-align: center;
 }
 
-.cards {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-}
-
 .header {
     text-align: center;
 }
@@ -44,26 +38,6 @@
 .what-to-do {
     text-align: center;
     font-size: 1.17em;;
-}
-
-.card__description {
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.card__image {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-    margin-inline-start: 1rem;
-    margin-inline-end: 1rem;
-    background-size: cover;
-    width: 180px;
-    height: 180px;
-    width: clamp(80px, 20vw, 180px);
-    height: clamp(80px, 20vw, 180px);
-    align-self: center;
 }
 
 .card__image--julia {

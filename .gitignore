@@ -5,10 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
-/*-pkg
-/wasm/**/*-pkg
 /wasm/**/target
-/pkg
 /src/pkg
 
 # Node

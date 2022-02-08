@@ -52,7 +52,7 @@
                 }
               },
               "customWebpackConfig": {
-                "path": "./extra-webpack.config.prod.ts",
+                "path": "./extra-webpack.config.ts",
                 "mergeRules": {
                   "externals": "replace"
                 }

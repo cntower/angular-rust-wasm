@@ -46,6 +46,13 @@ a:focus {
     word-break: break-word;
 }
 
+
+.cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+}
+
 .card:focus {
     box-shadow: 0 0 0 2px #1a73e8;
     text-decoration: none;
@@ -85,6 +92,27 @@ a:focus {
     transition: border .2s;
     width: 100%;
     z-index: 1;
+}
+
+
+.card__description {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card__image {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    width: clamp(80px, 20vw, 180px);
+    height: clamp(80px, 20vw, 180px);
+    align-self: center;
 }
 
 *, :after, :before {
