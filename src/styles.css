@@ -4,6 +4,10 @@
     color-scheme: light dark;
 }
 
+html, body {
+    width: 100%;
+}
+
 button, select, html, textarea, input {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
@@ -25,7 +29,7 @@ h2 {
     margin-inline: auto;
     width: 85rem;
     width: clamp(16rem, 95vw, 85rem);
-    padding-inline: clamp(1.375rem, 1.2rem + 0.89vw, 2rem);
+    padding-inline: clamp(.5rem, 0.9vw, 2rem);
     position: relative;
 }
 
