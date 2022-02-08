@@ -61,8 +61,8 @@
     background-size: cover;
     width: 180px;
     height: 180px;
-    width: clamp(80px, 10vw, 180px);
-    height: clamp(80px, 10vw, 180px);
+    width: clamp(80px, 20vw, 180px);
+    height: clamp(80px, 20vw, 180px);
     align-self: center;
 }
 
