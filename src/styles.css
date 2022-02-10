@@ -39,6 +39,7 @@ a:focus {
 
 :link, :visited {
     color: var(--link-color);
+    font-weight: var(--link-font-weight);
     outline: 0;
     -webkit-text-decoration: var(--link-text-decoration, none);
     -moz-text-decoration: var(--link-text-decoration, none);
@@ -66,7 +67,8 @@ a:focus {
 .card {
     background: var(--card-background-color);
     border-radius: 1rem;
-
+    color: var(--font-color);
+    font-weight: 400;
     box-shadow: 0 0 0 0 transparent;
     overflow: hidden;
     text-decoration: none;

@@ -4,5 +4,7 @@
         --card-background-color: #fff;
         --font-color: black;
         --card-border-color: #dadce0;
+        --link-color: rgb(26, 115, 232);
+        --link-font-weight: 500;
     }
 }
