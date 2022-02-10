@@ -23,7 +23,7 @@
                 "externals": "replace"
               }
             },
-            "outputPath": "dist/angular-wasm-rust",
+            "outputPath": "dist/angular-wasm-rust/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -123,6 +123,65 @@
             "scripts": [],
             "webWorkerTsConfig": "tsconfig.worker.json"
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/angular-wasm-rust/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "angular-wasm-rust:build:development",
+              "serverTarget": "angular-wasm-rust:server:development"
+            },
+            "production": {
+              "browserTarget": "angular-wasm-rust:build:production",
+              "serverTarget": "angular-wasm-rust:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-wasm-rust:build:production",
+              "serverTarget": "angular-wasm-rust:server:production"
+            },
+            "development": {
+              "browserTarget": "angular-wasm-rust:build:development",
+              "serverTarget": "angular-wasm-rust:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
