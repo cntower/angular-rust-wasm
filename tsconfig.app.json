@@ -10,10 +10,7 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
-  ],
-  "exclude": [
-    "src/pkg/worker/**/*",
-    "src/pkg/indexeddb/**/*"
+    "pkg/modules/**/*.d.ts",
+    "src/**/*.d.ts",
   ]
 }

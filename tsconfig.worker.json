@@ -13,7 +13,7 @@
     "src/**/*.worker.ts"
   ],
   "files": [
-//    "src/pkg/worker/console_log.d.ts",
-    "src/pkg/indexeddb/indexeddb.d.ts",
+//    "pkg/workers/worker/console_log.d.ts",
+    "pkg/workers/indexeddb/indexeddb.d.ts",
   ]
 }

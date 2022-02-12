@@ -7,6 +7,7 @@
 /bazel-out
 /wasm/**/target
 /src/pkg
+/pkg
 
 # Node
 /node_modules

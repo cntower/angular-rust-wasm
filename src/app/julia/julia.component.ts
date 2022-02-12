@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import {draw} from 'src/pkg/julia';
+import {draw} from 'pkg/modules/julia';
 
 @Component({
   selector: 'app-julia',
