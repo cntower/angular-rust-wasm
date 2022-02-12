@@ -3,25 +3,24 @@
 // global scope. We import the generated JS file to make `wasm_bindgen`
 // available which we need to initialize our WASM code.
 
-import {ActionText, ActionWorker} from './actions.worker';
+import {ActionText, ActionWorker} from '../worker/actions.worker';
 
-importScripts('./pkg/worker/console_log.js');
+importScripts('./pkg/indexeddb/indexeddb.js');
 
-console.log('Initializing worker')
+console.log('Initializing indexeddb worker')
 
 async function init_wasm_in_worker() {
   // Load the wasm file by awaiting the Promise returned by `wasm_bindgen`.
-  await wasm_bindgen('./pkg/worker/console_log_bg.wasm');
+  await wasm_bindgen('./pkg/indexeddb/indexeddb_bg.wasm');
 }
 
 init_wasm_in_worker().then(() => {
-  console.log('The wasm file was loaded.');
+  console.log('The indexeddb wasm file was loaded.');
+  wasm_bindgen.example().then(resultFromDb => console.log('Result from db:', resultFromDb));
   postMessage({type: 'init'} as ActionWorker);
 });
 
 addEventListener('message', (messageEvent: MessageEvent) => {
-  // @ts-ignore
-  wasm_bindgen.wasm_log('Hey! From Web Worker!')
   dispatch(messageEvent);
 });
 

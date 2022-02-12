@@ -10,9 +10,10 @@
     "types": []
   },
   "include": [
-    "src/**/*.worker.ts",
+    "src/**/*.worker.ts"
   ],
   "files": [
-    "src/pkg/worker/console_log.d.ts"
+//    "src/pkg/worker/console_log.d.ts",
+    "src/pkg/indexeddb/indexeddb.d.ts",
   ]
 }

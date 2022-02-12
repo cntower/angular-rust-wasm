@@ -33,7 +33,9 @@
               "src/assets",
               "src/robots.txt",
               "src/pkg/worker/console_log.js",
-              "src/pkg/worker/console_log_bg.wasm"
+              "src/pkg/worker/console_log_bg.wasm",
+              "src/pkg/indexeddb/indexeddb.js",
+              "src/pkg/indexeddb/indexeddb_bg.wasm"
             ],
             "styles": [
               "src/styles.css"

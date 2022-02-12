@@ -1,0 +1,44 @@
+[package]
+name = "indexeddb"
+version = "0.1.0"
+authors = ["The wasm-bindgen Developers", "cntower"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.79"
+wasm-bindgen-futures = "0.4.29"
+futures = "0.3"
+
+
+[dependencies.js-sys]
+version = "0.3.56"
+
+[dependencies.web-sys]
+version = "0.3.56"
+features = [
+    "console",
+    "DomException",
+    "DomStringList",
+    "Event",
+    "EventTarget",
+    "IdbDatabase",
+    "IdbFactory",
+    "IdbObjectStore",
+    "IdbObjectStoreParameters",
+    "IdbOpenDbRequest",
+    "IdbKeyRange",
+    "IdbRequest",
+    "IdbRequestReadyState",
+    "IdbTransaction",
+    "IdbTransactionMode",
+    "IdbVersionChangeEvent",
+    "Window",
+    "WorkerGlobalScope",
+]
+
+[dependencies.indexed_db_futures]
+version = "0.2.3"
+
